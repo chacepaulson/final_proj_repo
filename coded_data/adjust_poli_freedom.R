@@ -15,13 +15,6 @@ poli_freedom <- poli_freedom %>%
          poli_freedom = Total
   )
 
-# export new data set 
-
-install.packages("xlsx")
-library(xlsx)
-write.xlsx(poli_freedom, file, sheetName="poli_freedom")
-??write.xlsx
-
 # create second data set only with columns we care about 
 
 small_poli <- data.frame("country_name" = poli_freedom$country_name, 
